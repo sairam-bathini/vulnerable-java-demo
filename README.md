@@ -1,46 +1,73 @@
-🚀 Vulnerable Java Demo (Jenkins + SonarQube)
+# 🚀 Vulnerable Java Demo (Jenkins + SonarQube)
 
-This project is a simple intentionally vulnerable Java application created for demonstrating:
+This project is a **simple intentionally vulnerable Java application** created for demonstrating:
 
-CI/CD using Jenkins
-Static code analysis using SonarQube
-DevSecOps pipeline concepts
-📂 Project Structure
+* CI/CD using Jenkins
+* Static code analysis using SonarQube
+* DevSecOps pipeline concepts
+
+---
+
+## 📂 Project Structure
+
+```
 vulnerable-java-demo/
 ├── src/main/java/com/demo/App.java
 ├── pom.xml
 ├── sonar-project.properties
 └── README.md
-⚠️ Vulnerabilities Included
+```
+
+---
+
+## ⚠️ Vulnerabilities Included
 
 This project intentionally contains:
 
-🔴 SQL Injection
-🔴 Hardcoded Credentials
-🟠 Insecure Coding Practices
+* 🔴 SQL Injection
+* 🔴 Hardcoded Credentials
+* 🟠 Insecure Coding Practices
 
 👉 Purpose: To demonstrate how tools like SonarQube detect issues.
 
-🛠️ Prerequisites
+---
+
+## 🛠️ Prerequisites
 
 Make sure you have:
 
-Java 11 or 17
-Maven
-Jenkins installed
-SonarQube running
-⚙️ How to Run Locally
+* Java 11 or 17
+* Maven
+* Jenkins installed
+* SonarQube running
+
+---
+
+## ⚙️ How to Run Locally
+
+```bash
 git clone https://github.com/YOUR-USERNAME/vulnerable-java-demo.git
 cd vulnerable-java-demo
 mvn clean install
-🔍 SonarQube Scan (Manual)
+```
+
+---
+
+## 🔍 SonarQube Scan (Manual)
+
+```bash
 mvn sonar:sonar \
 -Dsonar.host.url=http://localhost:9000 \
 -Dsonar.login=YOUR_TOKEN
-🤖 Jenkins Pipeline
+```
+
+---
+
+## 🤖 Jenkins Pipeline
 
 Example pipeline:
 
+```groovy
 pipeline {
     agent any
 
@@ -71,26 +98,39 @@ pipeline {
         }
     }
 }
-📊 Expected Output
+```
+
+---
+
+## 📊 Expected Output
 
 After running the pipeline:
 
-SonarQube will detect:
-Vulnerabilities
-Code Smells
-Security Hotspots
-🎯 Learning Objectives
+* SonarQube will detect:
+
+  * Vulnerabilities
+  * Code Smells
+  * Security Hotspots
+
+---
+
+## 🎯 Learning Objectives
 
 By using this project, you will learn:
 
-CI/CD pipeline creation
-Integration of Jenkins with SonarQube
-Static code analysis
-DevSecOps basics
-⚠️ Disclaimer
+* CI/CD pipeline creation
+* Integration of Jenkins with SonarQube
+* Static code analysis
+* DevSecOps basics
 
-This project is intentionally vulnerable and should be used only for educational purposes.
+---
 
-💡 Author
+## ⚠️ Disclaimer
 
-Created by Sairam for teaching Application Security & DevSecOps 🚀
+This project is **intentionally vulnerable** and should be used **only for educational purposes**.
+
+---
+
+## 💡 Author
+
+Created by **Sairam** for teaching Application Security & DevSecOps 🚀
