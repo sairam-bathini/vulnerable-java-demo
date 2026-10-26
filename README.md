@@ -1,6 +1,6 @@
 # 🚀 Vulnerable Java Demo (Jenkins + SonarQube)
 
-This project is a **simple intentionally vulnerable Java application** created for demonstrating:
+This project is a **simple, intentionally vulnerable Java application** created for demonstrating:
 
 * CI/CD using Jenkins
 * Static code analysis using SonarQube
